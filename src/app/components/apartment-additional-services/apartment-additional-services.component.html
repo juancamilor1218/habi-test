@@ -1,0 +1,22 @@
+<section>
+    <h1>¿Algún servicio adicional?</h1>    
+    <form [formGroup]="ApartmentForm" (ngSubmit)="submit()">
+        <div class="form-field">
+            <label>Serivcios adicionales</label>
+            <div class="checkbox-field">
+                <input formControlName="zona" type="checkbox" class="checkbox" value="Zona BBQ" (change)="onCheckChange($event)"  >    
+                <span>Zona BBQ</span>
+            </div>
+            <div class="checkbox-field">
+                <input formControlName="salon" type="checkbox" class="checkbox" value="Salón comunal" (change)="onCheckChange($event)" >    
+                <span>Salón comunal</span>
+            </div>
+            <div class="checkbox-field">
+                <input formControlName="parque" type="checkbox" class="checkbox" value="Parque de juegos" (change)="onCheckChange($event)" >    
+                <span> Parque de juegos</span>
+            </div>
+          
+        </div>              
+        <button>SIGUIENTE</button>
+    </form>
+</section>

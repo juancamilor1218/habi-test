@@ -1,0 +1,48 @@
+.container{
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;  
+}
+
+
+.root{
+    display: flex;  
+}
+
+.root .main{
+    width: 60%;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid rgb(234, 234, 235);
+    border-radius: 10px;
+}
+
+.root .section-step{
+    width: 40%;
+    margin: 20px;
+    
+}
+
+@media (max-width: 600px){
+    .root{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        width: 85%;      
+        margin: 0px;
+    }
+    .root .main{
+        width: 100%;   
+        margin: 0px; 
+    }
+
+    .root .section-step{
+       width: 100%;
+    }
+    
+}
+

@@ -1,0 +1,29 @@
+<section>
+   
+    <h2>
+        Resumen de tu afiliación    
+    </h2>
+    <span class="subtitle">{{currentStep.nameStep}}</span>
+    <span class="title">Paso <b>{{currentStep.currentStep}}</b> de 5</span>   
+    <div class="list-step" >
+        <div class="item-step" *ngFor="let item of configStep" [ngClass]="{'item-step--disabled':!item.status}">
+            <div class="box-id-step">
+                <div class="id-step">
+                    <span>{{item.currentStep}}</span>
+                </div>
+            </div>
+            
+            <div class="content-step">
+                <h4>{{item.nameStep}}</h4>
+                <div class="info-step">                
+                    <div class="data-step" *ngFor="let data of item.data">
+                        <label>{{data.title}}</label>
+                        <br>
+                        <span>{{data.value}}</span>
+                    </div>   
+                </div>
+                         
+            </div>
+        </div>
+    </div>
+</section>

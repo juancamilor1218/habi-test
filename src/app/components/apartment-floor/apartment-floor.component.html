@@ -1,0 +1,19 @@
+<section>
+    <h1>¿En que piso se encuentra?</h1>    
+    <form [formGroup]="ApartmentForm" (ngSubmit)="submit()">
+        <div class="form-field">
+            <label>Piso</label>
+            <input formControlName="floor" type="number" [(ngModel)]="data.floor">
+            <div class="input-error" *ngIf="f.floor.hasError('required')">
+                el campo es obligatorio
+            </div>
+            <div class="input-error" *ngIf="f.floor.hasError('max')">
+                el piso maximo es 50
+            </div>
+            <div class="input-error" *ngIf="f.floor.hasError('min')">
+                el piso minimo es 1
+            </div>
+        </div>              
+        <button>SIGUIENTE</button>
+    </form>
+</section>

@@ -1,0 +1,13 @@
+<section>
+    <h1>Dirección de la residencia</h1>    
+    <form [formGroup]="ApartmentForm" (ngSubmit)="submit()">
+        <div class="form-field">
+            <label>Dirección</label>
+            <input formControlName="address" type="text" [(ngModel)]="data.address" >
+            <div class="input-error" *ngIf="f.address.hasError('required')">
+                el campo es obligatorio
+            </div>
+        </div>              
+        <button>SIGUIENTE</button>
+    </form>
+</section>

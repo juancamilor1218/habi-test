@@ -1,0 +1,13 @@
+<section>
+    <h1>Tú correo electronico</h1>    
+    <form [formGroup]="ClientDataForm" (ngSubmit)="submit()">
+        <div class="form-field">
+            <label>Email</label>
+            <input formControlName="email" type="email" [(ngModel)]="data.email">
+            <div class="input-error" *ngIf="f.email.hasError('email')">
+               email invalido
+            </div>
+        </div>              
+        <button>SIGUIENTE</button>
+    </form>
+</section>

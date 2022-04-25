@@ -1,0 +1,21 @@
+<section>
+    <h1>Información basica cliente</h1>    
+    <form [formGroup]="ClientDataForm" (ngSubmit)="submit()">
+        <div class="form-field">
+            <label>Nombre</label>
+            <input formControlName="name" type="text" [(ngModel)]="data.name" >
+            <div class="input-error" *ngIf="f.name.hasError('required')">
+                el campo es obligatorio
+            </div>
+        </div>
+        <div class="form-field">
+            <label>Apellido</label>
+            <input formControlName="surname" type="text" [(ngModel)]="data.surname" >
+            <div class="input-error" *ngIf="f.surname.hasError('required')">
+                el campo es obligatorio
+            </div>
+        </div>
+       
+        <button>SIGUIENTE</button>
+    </form>
+</section>

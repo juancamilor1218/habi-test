@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+   
+    background: rgb(246, 252, 255);;
+}
+
+h1,h2,h3,h4{
+    font-family: Montserrat;
+}   
+
+input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    width: 100%;
+    border: none;
+    height: 60px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0px 30px;
+    text-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-decoration: none !important;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(124, 1, 255);
+}
+form{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form .form-field {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+form .form-field input {
+    width: 100%;
+    border: 1px solid rgb(234, 234, 235);
+    box-sizing: border-box;
+    border-radius:8px;
+    padding:    6px 16px;
+    height: 56px;
+    color: rgb(67, 62, 71);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+form .form-field .input-error{
+    color: rgb(229, 24, 23);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 5px;
+}
+
+.form-field label {
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    color: rgb(46, 41, 51);
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.form-field label {
+   margin-top: 10px;
+}
+
+

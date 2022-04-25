@@ -1,0 +1,42 @@
+[
+    {
+        "currentStep":1,
+        "lastStep":false,
+        "nameStep":"Datos Basicos Cliente",
+        "data":[],
+        "status":false,
+        "url":"client-data"
+    },
+    {
+        "currentStep":2,
+        "lastStep":false,
+        "nameStep":"Correo electronico",
+        "data":[],
+        "status":false,
+        "url":"client-email"
+    },
+    {
+        "currentStep":3,
+        "lastStep":false,
+        "nameStep":"Residencia",
+        "data":[],
+        "status":false,
+        "url":"apartment-address"
+    },
+    {
+        "currentStep":4,
+        "lastStep":false,
+        "nameStep":"Piso del apartamento",
+        "data":[],
+        "status":false,
+        "url":"apartment-floor"
+    },
+    {
+        "currentStep":5,
+        "lastStep":true,
+        "nameStep":"Serivicios Apartamento",
+        "data":[],
+        "status":false,
+        "url":"apartment-additional"
+    }
+]
